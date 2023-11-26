@@ -4,11 +4,12 @@
     'category': 'Hospital',
     'summary': 'Hospital Managment System',
     'description': """Hospital Manegment""",
-    'depends': [],
+    'depends': ['mail.thread', 'mail.activity.mixin'],
     'data': [
          'security/ir.model.access.csv',
          'views/menu.xml',
-         'views/patient.xml'
+         'views/patient.xml',
+         'views/female_patient_view.xml'
     ],
     'demo': [],
     'application': True,
